@@ -7,68 +7,95 @@ body
     background: #fff;
 }
 
-.container {
-    width:800px;
-    margin:0 auto;
+.container
+{
+    width: 800px;
+    margin: 0 auto;
 }
 
-#player {
-	width:600px;
-	margin:0 auto;
+#player
+{
+    width: 600px;
+    margin: 0 auto;
 }
 
-#controls {
-	width:600px;
-	height:50px;
-	margin:0 auto;
+#controls
+{
+    width: 600px;
+    height: 50px;
+    margin: 0 auto;
 }
 
-div#playpause {
-    width: 20px;
+div#playpause
+{
     float: left;
+
+    width: 20px;
 }
 
-.play:after {
+.play:after
+{
+    font-family: 'FontAwesome';
+
     width: 20px;
     height: 20px;
+
     content: '\f04b';
+}
+.pause:after
+{
     font-family: 'FontAwesome';
-}
-.pause:after {
-	width:20px;
-	height:20px;
-	content:'\f04c';
-	font-family: 'FontAwesome';
-}
 
-
-div#time {
-    width: 100px;
-    float: left;
-}
-
-div#progress {
-    width: 360px;
-    float:left;
-}
-
-div#mute {
-    width: 120px;
-    float: right;
-}
-
-.mute:after {
     width: 20px;
     height: 20px;
-    content: '\f028';
+
+    content: '\f04c';
+}
+
+
+div#time
+{
+    float: left;
+
+    width: 100px;
+}
+
+div#progress
+{
+    float: left;
+
+    width: 360px;
+    margin-right: 20px;
+}
+
+div#mute
+{
+    float: left;
+
+    width: 20px;
+}
+
+.mute:after
+{
     font-family: 'FontAwesome';
+
+    width: 20px;
+    height: 20px;
+
+    content: '\f028';
 }
-.mute-off:after {
-	width:20px;
-	height:20px;
-	content:'\f026';
-	font-family: 'FontAwesome';
+.mute-off:after
+{
+    font-family: 'FontAwesome';
+
+    width: 20px;
+    height: 20px;
+
+    content: '\f026';
 }
+#mutebar
+{
+    float: right;
 
-
-
+    width: 75px;
+}
