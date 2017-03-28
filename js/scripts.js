@@ -5,7 +5,7 @@
 		var video = $("video").get(0),
 			playpause = $("#playpause"),
 			mute = $("#mute"),
-			mutebar = $("#mutebar"),
+			volumebar = $("#volumebar"),
 			time = $("#time"),
 			progressbar = $("#progressbar"),
 			valuestep = 0;
@@ -35,16 +35,14 @@
 	        }
 	    });
 
-	    mutebar.on("input change", function(val){
+	    volumebar.on("input change", function(val){
 
 		       setVolume(this.value); 
 
 		});
 
 		function setVolume(val) {
-	        // console.log('Before: ' + video.volume);
 	        video.volume = val / 100;
-	        // console.log('After: ' + video.volume);		    			
 		}
 
 	    function formatTime(seconds) {
