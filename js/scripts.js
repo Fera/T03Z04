@@ -29,6 +29,10 @@
 				video.volume = 0;
 			}
 
+			if(mutebar.val() == 50){
+				video.volume = 0.5;
+			}
+
 			if(mutebar.val() == 100) {
 				video.volume = 1;
 			}
