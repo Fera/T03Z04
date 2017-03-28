@@ -21,24 +21,7 @@
 		            playpause.addClass("play").removeClass("pause");
 		    }
 
-		});
-
-		mutebar.on("input change", function(){
-
-			if(mutebar.val() == 0){
-				video.volume = 0;
-			}
-
-			if(mutebar.val() == 50){
-				video.volume = 0.5;
-			}
-
-			if(mutebar.val() == 100) {
-				video.volume = 1;
-			}
-			
-
-		});
+		});	
 
 
 		mute.on("click", function(){
@@ -51,6 +34,18 @@
 	            mute.addClass("mute-off").removeClass("mute");
 	        }
 	    });
+
+	    mutebar.on("input change", function(val){
+
+		       setVolume(this.value); 
+
+		});
+
+		function setVolume(val) {
+	        // console.log('Before: ' + video.volume);
+	        video.volume = val / 100;
+	        // console.log('After: ' + video.volume);		    			
+		}
 
 	    function formatTime(seconds) {
 	        var seconds = Math.round(seconds),
