@@ -28,6 +28,20 @@ div#playpause {
     float: left;
 }
 
+.play:after {
+    width: 20px;
+    height: 20px;
+    content: '\f04b';
+    font-family: 'FontAwesome';
+}
+.pause:after {
+	width:20px;
+	height:20px;
+	content:'\f04c';
+	font-family: 'FontAwesome';
+}
+
+
 div#time {
     width: 100px;
     float: left;
@@ -41,6 +55,19 @@ div#progress {
 div#mute {
     width: 120px;
     float: right;
+}
+
+.mute:after {
+    width: 20px;
+    height: 20px;
+    content: '\f028';
+    font-family: 'FontAwesome';
+}
+.mute-off:after {
+	width:20px;
+	height:20px;
+	content:'\f026';
+	font-family: 'FontAwesome';
 }
 
 
